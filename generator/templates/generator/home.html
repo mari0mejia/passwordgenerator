@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<div class ="container text-center">
 <h1>Password Generator</h1>
 
 <!-- this is the way we are creating a new password-->
@@ -12,7 +15,7 @@
         <option value = "12" selected = 'selected'>12</option>
         <option value = "13">13</option>
         <option value = "14">14</option>
-    </select>
+    </select> Length
 <br>
     <input type = "checkbox" name = "uppercase" >Uppercase
 <br>
@@ -21,11 +24,11 @@
     <input type = "checkbox" name = "special" >Special
 <br>
 <br>
+<a href="{% url 'about' %}">
+    <img src="https://rabbiteyemovement.at/rabbit/wp-content/themes/rabbit-theme/images/about.jpg" alt="">
+</a>
 
-<img src="https://rabbiteyemovement.at/rabbit/wp-content/themes/rabbit-theme/images/about.jpg" alt="">
 
-<a href = "{% url 'about' %}">About Page</a>
-<br>
-
-<input type = "submit" value = "Generate Password">
+<input type = "submit" value = "Generate Password" class = "btn btn-primary">
 </form>
+<div>
